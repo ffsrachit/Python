@@ -1,7 +1,10 @@
 from pymongo import MongoClient
 from bson import ObjectId
+import os
+from dotenv import load_dotenv
 
-client = MongoClient("mongodb+srv://ytuser:strongpassword123@cluster0.906kovk.mongodb.net/?appName=Cluster0")
+load_dotenv()
+client = MongoClient(os.getenv("MONGO_URI"))
 
 db = client["ytmanager"]
 video_collection = db["videos"]
