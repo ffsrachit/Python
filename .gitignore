@@ -2,6 +2,9 @@ Ignore virtual env in any main or sub directory
 
 **/venv/
 **/.venv/
+# Environment variables
+.env
+python_mongodb/.env
 # Operating system files
 .DS_Store
 Thumbs.db
@@ -13,6 +16,8 @@ Thumbs.db
 # Build artifacts
 /build/
 /dist/
+
+
 
 
 
